@@ -5,17 +5,32 @@
 
 ## 1. 环境配置
 
+## 2. 数据准备
+#### 2.1关于计算CLIP Score
+```
+├── path/to/image
+│   ├── cat.png
+│   ├── dog.png
+│   └── bird.jpg
+└── path/to/text
+    ├── cat.txt
+    ├── dog.txt
+    └── bird.txt
+```
 
-## 2. 快速开始
+## 3. 快速开始
+我们提供了一个简单的脚本，用于快速计算关于diffusion models若干指标的集成pipeline。
+
 ```
 bash scripts/start.sh
 ```
 
-其中，--cal_IS 表示是否计算IS， 默认为True。 -- --cal_FID 表示是否计算FID， 默认为True。 --cal_CLIP 表示是否计算CLIP， 默认为True。  
---path1 表示计算FID时的生成图像的路径，--path2 表示计算FID时的真实图像的路径。计算IS会默认采用--path1。
---real_path 表示计算clip score时使用的真实图像的路径, --fake_path 表示计算clip score时使用的文字的路径。
+其中，--cal_IS 表示是否计算IS， 默认为True。 --cal_FID 表示是否计算FID， 默认为True。 --cal_CLIP 表示是否计算CLIP， 默认为True。  
+其中，--path1 表示计算FID时的生成图像的路径，--path2 表示计算FID时的真实图像的路径。计算IS会默认采用--path1。
+其中，--real_path 表示计算clip score时使用的真实图像的路径, --fake_path 表示计算clip score时使用的文字的路径。
 
-## 3. 参考来源
+
+## 4. 参考来源
 [IS Value参考链接](https://github.com/sbarratt/inception-score-pytorch/tree/master)
 
 [FID Value参考链接](https://github.com/mseitzer/pytorch-fid)
