@@ -6,9 +6,22 @@
 后续还会更新其他的一些指标，以及tensorflow的集成pipeline，可能也会增加T2V系列, 敬请期待！！！
 
 ## 1. 环境配置
+#### 1.1 利用requirement.txt文件进行安装
+```
+pip install -r requirements.txt
+```
+#### 1.2 利用requirement.txt文件进行安装
+```
+conda env create -f environment.yaml
+```
+#### 1.3 利用pip命令安装
 - Install PyTorch:
 ```
 pip install torch  # Choose a version that suits your GPU
+```
+- Install Scipy
+```
+pip install scipy
 ```
 - Install CLIP:
 ```

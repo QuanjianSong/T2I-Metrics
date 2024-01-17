@@ -52,7 +52,6 @@ def calculate_clip_score(dataloader, model, real_flag, fake_flag):
     sample_num = 0.
     logit_scale = model.logit_scale.exp()
     for batch_data in tqdm(dataloader, desc="Processing:"):
-        breakpoint()
         real = batch_data['real']
         real_features = forward_modality(model, real, real_flag)
         fake = batch_data['fake']
