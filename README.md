@@ -1,7 +1,7 @@
-# T2I-Metrics ----- 这是一个关于Text-to-Image中Metrics的Pytorch代码库
+# T2I-Metrics--这是一个关于Text-to-Image中Metrics的Pytorch集成pipeline代码库
 ## 0. 项目介绍
 
-近年来diffusion models的发展十分迅速，但本人发现目前关于diffusion models的评价指标并没有良好的集成，因此本人参考了时间,搭建了一个关于diffusion models若干评价指标的pipeline代码库。欢迎各位star + fork。
+近年来diffusion models的发展十分迅速，但本人发现目前关于diffusion models的评价指标并没有良好的集成，因此本人参考了市面上一些比较标准的计算diffusion metrics的代码, 自己搭建了一个关于diffusion models若干评价指标的集成pipeline代码库。欢迎各位star + fork。
 
 ## 1. 环境配置
 
@@ -17,5 +17,7 @@ bash scripts/start.sh
 
 ## 3. 参考来源
 [IS Value参考链接](https://github.com/sbarratt/inception-score-pytorch/tree/master)
+
 [FID Value参考链接](https://github.com/mseitzer/pytorch-fid)
+
 [CLIP Score参考链接](https://github.com/Taited/clip-score)
