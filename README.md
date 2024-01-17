@@ -15,7 +15,6 @@ pip install torch  # Choose a version that suits your GPU
 pip install git+https://github.com/openai/CLIP.git
 ```
 
-
 ## 2. 数据准备
 - 关于IS Value的数据格式
 ```
@@ -46,6 +45,14 @@ pip install git+https://github.com/openai/CLIP.git
     ├── dog.txt
     └── bird.txt
 ```
+OR
+```
+├── path/to/jsonl
+│   ├── {"real_path": cat.png, "fake_path": cat.txt or prompt}
+│   ├── {"real_path": dog.png, "fake_path": dog.txt or prompt}
+│   └── {"real_path": bird.png, "fake_path": bird.txt or prompt}
+```
+
 ## 3. 快速开始
 我们提供了一个简单的脚本，用于快速计算关于diffusion models若干指标的集成pipeline。
 
@@ -53,12 +60,26 @@ pip install git+https://github.com/openai/CLIP.git
 bash scripts/start.sh
 ```
 
+您也可以直接在命令行运行如下的命令进行metrics的计算
+
+```
+# for img-txt
+python ./cal_diffusion_metric.py  --cal_IS True --cal_FID True --cal_CLIP True \
+    --path1 ./examples/imgs1 --path2 ./examples/imgs2 \
+    --real_path ./examples/imgs1 --fake_path ./examples/prompt
+# for jsonl
+python ./cal_diffusion_metric.py  --cal_IS True --cal_FID True --cal_CLIP True \
+    --path1 ./examples/imgs1 --path2 ./examples/imgs2 \
+    --jsonl_path .examples/img-txt.jsonl # for img-txt
+```
+
 其中，--cal_IS 表示是否计算IS， 默认为True。 --cal_FID 表示是否计算FID， 默认为True。 --cal_CLIP 表示是否计算CLIP， 默认为True。
 
 其中，--path1 表示计算FID时的生成图像的路径，--path2 表示计算FID时的真实图像的路径。计算IS会默认采用--path1。
 
-其中，--real_path 表示计算clip score时使用的真实图像的路径, --fake_path 表示计算clip score时使用的文字的路径。
+其中，--real_path 表示计算clip score时使用的真实图像的路径, --fake_path 表示计算clip score时使用的文字的路径。 也支持传入单个--jsonl_path, jsonl格式具有优先级。
 ## 4. 参考来源
+
 [IS Value参考链接](https://github.com/sbarratt/inception-score-pytorch/tree/master)
 
 [FID Value参考链接](https://github.com/mseitzer/pytorch-fid)

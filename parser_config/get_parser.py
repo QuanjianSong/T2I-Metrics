@@ -59,10 +59,13 @@ def get_clip_score_parser():
     parser.add_argument('--fake_flag', type=str, default='txt',
                         help=('The modality of real path. '
                             'Default to txt'))
-    parser.add_argument('--real_path', type=str, default='', 
+    parser.add_argument('--real_path', type=str, default=None, 
                         help=('Paths to the generated images or '
                             'to .npz statistic files'))
-    parser.add_argument('--fake_path', type=str, default='',
+    parser.add_argument('--fake_path', type=str, default=None,
+                        help=('Paths to the generated images or '
+                            'to .npz statistic files'))
+    parser.add_argument('--jsonl_path', type=str, default=None,
                         help=('Paths to the generated images or '
                             'to .npz statistic files'))
 

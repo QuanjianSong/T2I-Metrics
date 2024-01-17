@@ -63,10 +63,10 @@ def main(args):
         print('**************************End******************************')
 
     if args.cal_CLIP:
-        assert args.real_path is not None and args.fake_path is not None, 'real_path and fake_path is necessary for calculating CLIP score.'
+        assert args.jsonl_path is not None or args.real_path is not None and args.fake_path is not None, 'jsonl_path or real_path and fake_path is necessary for calculating CLIP score.'
         print('********************Calculate CLIP Score*********************')
         clip_score = cal_clip_score(clip_model=args.clip_model, batch_size=args.batch_size, device=device,
-                    num_workers=num_workers, real_path=args.real_path, fake_path=args.fake_path, 
+                    num_workers=num_workers, real_path=args.real_path, fake_path=args.fake_path, jsonl_path=args.jsonl_path,
                     real_flag=args.real_flag, fake_flag=args.fake_flag)
         metrics['CLIP_Score'] = clip_score
         print('**************************End******************************')

@@ -43,7 +43,7 @@ except ImportError:
     def tqdm(x):
         return x
 
-from utils.metrics_utils import DummyDataset
+from utils.metrics_utils import DummyDataset, JsonDataset
 
 
 @torch.no_grad()
@@ -52,6 +52,7 @@ def calculate_clip_score(dataloader, model, real_flag, fake_flag):
     sample_num = 0.
     logit_scale = model.logit_scale.exp()
     for batch_data in tqdm(dataloader, desc="Processing:"):
+        breakpoint()
         real = batch_data['real']
         real_features = forward_modality(model, real, real_flag)
         fake = batch_data['fake']
@@ -105,13 +106,19 @@ def main(args):
 
     return clip_score
 
-def cal_clip_score(clip_model, batch_size, device, num_workers, real_path, fake_path,
+def cal_clip_score(clip_model, batch_size, device, num_workers, real_path, fake_path, jsonl_path,
                     real_flag, fake_flag):
     print('Loading CLIP model: {}'.format(clip_model))
     model, preprocess = clip.load(clip_model, device=device)
-    dataset = DummyDataset(real_path, fake_path,
+    # breakpoint()
+    if jsonl_path is not None:
+        dataset = JsonDataset(jsonl_path, real_flag, fake_flag, transform=preprocess, tokenizer=clip.tokenize)
+    elif real_path is not None and fake_path is not None:
+        dataset = DummyDataset(real_path, fake_path,
                             real_flag, fake_flag,
                             transform=preprocess, tokenizer=clip.tokenize)
+    else:
+        raise ValueError('Either json_path or (real_path and fake_path) should be provided.')
     dataloader = DataLoader(dataset, batch_size, 
                             num_workers=num_workers, pin_memory=True)
     clip_score = calculate_clip_score(dataloader, model,
