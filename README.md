@@ -16,11 +16,14 @@ pip install git+https://github.com/openai/CLIP.git
 
 ## 2. 数据准备
 - 关于IS Value的数据格式
+```
 ├── path/to/image
 │   ├── cat.png
 │   ├── dog.png
 │   └── bird.jpg
+```
 - 2.2关于FID Value的数据格式
+```
 ├── path/to/image
 │   ├── cat1.png
 │   ├── dog1.png
@@ -29,6 +32,7 @@ pip install git+https://github.com/openai/CLIP.git
 │   ├── cat2.png
 │   ├── dog2.png
 │   └── bird2.jpg
+```
 - 2.3关于CLIP Score的数据格式
 ```
 ├── path/to/image
