@@ -22,7 +22,7 @@ pip install git+https://github.com/openai/CLIP.git
 │   ├── dog.png
 │   └── bird.jpg
 ```
-- 2.2关于FID Value的数据格式
+- 关于FID Value的数据格式
 ```
 ├── path/to/image
 │   ├── cat1.png
@@ -33,7 +33,7 @@ pip install git+https://github.com/openai/CLIP.git
 │   ├── dog2.png
 │   └── bird2.jpg
 ```
-- 2.3关于CLIP Score的数据格式
+- 关于CLIP Score的数据格式
 ```
 ├── path/to/image
 │   ├── cat.png
@@ -51,11 +51,11 @@ pip install git+https://github.com/openai/CLIP.git
 bash scripts/start.sh
 ```
 
-其中，--cal_IS 表示是否计算IS， 默认为True。 --cal_FID 表示是否计算FID， 默认为True。 --cal_CLIP 表示是否计算CLIP， 默认为True。  
+其中，--cal_IS 表示是否计算IS， 默认为True。 --cal_FID 表示是否计算FID， 默认为True。 --cal_CLIP 表示是否计算CLIP， 默认为True。
+
 其中，--path1 表示计算FID时的生成图像的路径，--path2 表示计算FID时的真实图像的路径。计算IS会默认采用--path1。
+
 其中，--real_path 表示计算clip score时使用的真实图像的路径, --fake_path 表示计算clip score时使用的文字的路径。
-
-
 ## 4. 参考来源
 [IS Value参考链接](https://github.com/sbarratt/inception-score-pytorch/tree/master)
 
