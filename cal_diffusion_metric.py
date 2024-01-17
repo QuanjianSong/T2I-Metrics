@@ -43,6 +43,7 @@ def main(args):
     metrics = {}
 
     if args.cal_IS:
+        assert args.path1 is not None, 'path1 is necessary for calculating IS value.'
         print('********************Calculate IS Value*********************')
         is_value, is_std = cal_is_value(args.path1, args.batch_size, args.is_dims,
                                 device, num_workers, splits=5)
@@ -51,6 +52,7 @@ def main(args):
         print('**************************End******************************')
 
     if args.cal_FID:
+        assert args.path1 is not None and args.path2 is not None, 'path1 and path2 is necessary for calculating FID value.'
         print('********************Calculate FID Value*********************')
         fid_value = cal_fid_value([args.path1, args.path2],
                                         args.batch_size,
@@ -61,6 +63,7 @@ def main(args):
         print('**************************End******************************')
 
     if args.cal_CLIP:
+        assert args.real_path is not None and args.fake_path is not None, 'real_path and fake_path is necessary for calculating CLIP score.'
         print('********************Calculate CLIP Score*********************')
         clip_score = cal_clip_score(clip_model=args.clip_model, batch_size=args.batch_size, device=device,
                     num_workers=num_workers, real_path=args.real_path, fake_path=args.fake_path, 

@@ -59,10 +59,10 @@ def get_clip_score_parser():
     parser.add_argument('--fake_flag', type=str, default='txt',
                         help=('The modality of real path. '
                             'Default to txt'))
-    parser.add_argument('--real_path', type=str, default='/alg_vepfs/private/panfayu/sqj/my_code/T2I-Metrics/examples/imgs1', 
+    parser.add_argument('--real_path', type=str, default='', 
                         help=('Paths to the generated images or '
                             'to .npz statistic files'))
-    parser.add_argument('--fake_path', type=str, default='/alg_vepfs/private/panfayu/sqj/my_code/T2I-Metrics/examples/prompt',
+    parser.add_argument('--fake_path', type=str, default='',
                         help=('Paths to the generated images or '
                             'to .npz statistic files'))
 
