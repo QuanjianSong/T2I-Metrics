@@ -3,7 +3,7 @@
 
 近年来diffusion models的发展十分迅速，但本人发现目前关于diffusion models的评价指标并没有良好的集成.因此本人参考了市面上一些比较标准的计算diffusion metrics的代码, 自己搭建了一个关于diffusion models若干评价指标的集成pipeline代码库。欢迎各位star + fork。
 
-后续还会更新其他的一些指标，以及tensorflow的集成pipeline，敬请期待！！！
+后续还会更新其他的一些指标，以及tensorflow的集成pipeline，可能也会增加T2V系列, 敬请期待！！！
 
 ## 1. 环境配置
 - Install PyTorch:
