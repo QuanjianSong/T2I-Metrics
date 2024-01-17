@@ -4,9 +4,32 @@
 近年来diffusion models的发展十分迅速，但本人发现目前关于diffusion models的评价指标并没有良好的集成，因此本人参考了市面上一些比较标准的计算diffusion metrics的代码, 自己搭建了一个关于diffusion models若干评价指标的集成pipeline代码库。欢迎各位star + fork。
 
 ## 1. 环境配置
+- Install PyTorch:
+```
+pip install torch  # Choose a version that suits your GPU
+```
+- Install CLIP:
+```
+pip install git+https://github.com/openai/CLIP.git
+```
+
 
 ## 2. 数据准备
-#### 2.1关于计算CLIP Score
+- 关于IS Value的数据格式
+├── path/to/image
+│   ├── cat.png
+│   ├── dog.png
+│   └── bird.jpg
+- 2.2关于FID Value的数据格式
+├── path/to/image
+│   ├── cat1.png
+│   ├── dog1.png
+│   └── bird1.jpg
+├── path/to/image
+│   ├── cat2.png
+│   ├── dog2.png
+│   └── bird2.jpg
+- 2.3关于CLIP Score的数据格式
 ```
 ├── path/to/image
 │   ├── cat.png
@@ -17,7 +40,6 @@
     ├── dog.txt
     └── bird.txt
 ```
-
 ## 3. 快速开始
 我们提供了一个简单的脚本，用于快速计算关于diffusion models若干指标的集成pipeline。
 
