@@ -1,8 +1,10 @@
 # T2I-Metrics -- This is a Pytorch-integrated pipeline codebase for Metrics in Text-to-Image. [To refer to the Chinese introduction, please click on this link.](https://github.com/QuanjianSong/T2I-Metrics/blob/main/README_cn.md)
 
 ## News
-- 🔥 We’ve added new evaluation metrics in [AutoMetrics](https://github.com/QuanjianSong/AutoMetrics), including DINO score, DreaSim score, and Aesthetic metrics, etc. We plan to consolidate the two repositories in the near future., appreciate your continued interest!
-
+<pre>
+<li> 🔥 We’ve added new evaluation metrics in [AutoMetrics](https://github.com/QuanjianSong/AutoMetrics), including DINO score, DreaSim score, and Aesthetic metrics, etc. We plan to consolidate the two repositories in the near future., appreciate your continued interest!
+</pre>
+    
 ## 0. Project Introduction
 
 In recent years, the development of diffusion models is very rapid, but I found that the current evaluation metrics on diffusion models are not well integrated. Therefore, I refer to the market for some of the more standard code for calculating diffusion metrics, and built a pipeline code base for integrating several evaluation metrics of diffusion models. Welcome to star + fork.
