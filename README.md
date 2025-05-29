@@ -2,7 +2,7 @@
 
 ## News
 <pre>
-<li> 🔥 We’ve added new evaluation metrics in [AutoMetrics](https://github.com/QuanjianSong/AutoMetrics), including DINO score, DreaSim score, and Aesthetic metrics, etc. We plan to consolidate the two repositories in the near future., appreciate your continued interest!
+• 🔥 We’ve added new evaluation metrics in [AutoMetrics](https://github.com/QuanjianSong/AutoMetrics), including DINO score, DreaSim score, and Aesthetic metrics, etc. We plan to consolidate the two repositories in the near future., appreciate your continued interest!
 </pre>
     
 ## 0. Project Introduction
