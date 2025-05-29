@@ -1,7 +1,9 @@
 # T2I-Metrics--这是一个关于Text-to-Image中Metrics的Pytorch集成pipeline代码库
 
-## 0. 项目介绍
+# 新闻
+- 🔥 我们在[AutoMetrics](https://github.com/QuanjianSong/AutoMetrics)中新增了评估指标，包括 DINO 分数、DreaSim 分数和美学指标等。我们计划在不久的将来合并这两个仓库，感谢您一直以来的关注！
 
+## 0. 项目介绍 
 近年来diffusion models的发展十分迅速，但本人发现目前关于diffusion models的评价指标并没有良好的集成.因此本人参考了市面上一些比较标准的计算diffusion metrics的代码, 自己搭建了一个关于diffusion models若干评价指标的集成pipeline代码库。欢迎各位star + fork。
 
 后续还会更新其他的一些指标，以及tensorflow的集成pipeline，可能也会增加T2V系列, 敬请期待！！！
