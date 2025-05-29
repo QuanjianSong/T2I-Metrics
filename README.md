@@ -3,7 +3,7 @@
 ## News
 - 🔥 We’ve added new evaluation metrics in [AutoMetrics](https://github.com/QuanjianSong/AutoMetrics), including DINO score, DreaSim score, and Aesthetic metrics, etc. We plan to consolidate the two repositories in the near future., appreciate your continued interest!
 
-## 0. Projects Introduction
+## 0. Project Introduction
 
 In recent years, the development of diffusion models is very rapid, but I found that the current evaluation metrics on diffusion models are not well integrated. Therefore, I refer to the market for some of the more standard code for calculating diffusion metrics, and built a pipeline code base for integrating several evaluation metrics of diffusion models. Welcome to star + fork.
 
