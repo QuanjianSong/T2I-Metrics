@@ -1,9 +1,9 @@
 # T2I-Metrics -- This is a Pytorch-integrated pipeline codebase for Metrics in Text-to-Image. [To refer to the Chinese introduction, please click on this link.](https://github.com/QuanjianSong/T2I-Metrics/blob/main/README_cn.md)
 
 ## News
-<pre>
+<div style="font-family: monospace; white-space: pre-wrap;">
 • 🔥 We’ve added new evaluation metrics in <a href="https://github.com/QuanjianSong/AutoMetrics">AutoMetrics</a>, including DINO score, DreaSim score, and Aesthetic metrics, etc. We plan to consolidate the two repositories in the near future., appreciate your continued interest!
-</pre>
+</div>
     
 ## 0. Project Introduction
 
