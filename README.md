@@ -46,7 +46,7 @@ pip install scipy
 pip install git+https://github.com/openai/CLIP.git
 ```
 
-## 🤗 Checkpoints
+## 🤗 Checkpoint
 
 You need to download the inception_v3_google.pth, pt_inception.pth, and ViT-B-32.pt weights files and place them in the checkpoints folder. We have integrated them into the following links for your convenience.
 
