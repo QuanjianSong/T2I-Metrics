@@ -1,6 +1,6 @@
 <div align="center">
 <h1>
-T2I-Metrics:a pipeline codebase for Metrics in Text-to-Image.
+T2I-Metrics: A pipeline codebase for metrics in text-to-image [Official Code of PyTorch]
 </h1>
 
 <div>
