@@ -17,7 +17,7 @@ T2I-Metrics: A Pipeline for Metrics in Text-to-Image
 
 ## 🎉 News
 <pre>
-    • 🔥 We have added new evaluation metrics in <a href="https://github.com/QuanjianSong/AutoMetrics">AutoMetrics</a>, including DINO score, DreamSim score, and Aesthetic metrics, etc.
+• 🔥 We have added new evaluation metrics in <a href="https://github.com/QuanjianSong/AutoMetrics">AutoMetrics</a>, including DINO score, DreamSim score, and Aesthetic metrics, etc.
 </pre>
 
     
