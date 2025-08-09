@@ -4,12 +4,9 @@ T2I-Metrics: A Pipeline for Metrics in Text-to-Image
 <br>
 [Official Code of PyTorch]
 </h1>
-
-
 </div>
 
 
----
 
 
 ## 🎉 News
