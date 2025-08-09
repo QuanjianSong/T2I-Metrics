@@ -7,17 +7,14 @@ T2I-Metrics: A Pipeline for Metrics in Text-to-Image
 </div>
 
 
-
-
 ## 🎉 News
 <pre>
-• 🔥 The repository has been reorganized and now includes various AIGC metrics such as FID, IS, CLIP, DINO, DreamSim, and more.
+• 🔥 The repository has been reorganized and now includes various AIGC metrics: FID, IS, CLIP, DINO, and DreamSim etc.
 </pre>
 
     
 ## 🎬 Overview
 In recent years, the development of diffusion models is very rapid, but I found that the current evaluation metrics on diffusion models are not well integrated. Therefore, I refer to the market for some of the more standard code for calculating diffusion metrics, and built a pipeline code base for integrating several evaluation metrics of diffusion models. Welcome to star + fork.
-
 We will also update some other metrics, and tensorflow integration pipeline, may also add T2V series, please look forward to!
 
 ## 🔧 Environment
@@ -38,9 +35,7 @@ pip install torch==1.12.1+cu116 torchvision==0.13.1+cu116 torchaudio==0.12.1 --e
 
 ## 🤗 Checkpoint
 
-You need to download the inception_v3_google.pth, pt_inception.pth, and ViT-B-32.pt weights files and place them in the checkpoints folder. We have integrated them into the following links for your convenience.
-
-[Baidu cloud disk link, extraction code: fpfp](https://pan.baidu.com/s/1nGPq5y2OfCumMQkY6ROKGA?)
+If you need the `inception_v3_google.pth`, `pt_inception.pth`, and `ViT-B-32.pt` weight files, you can download them from the this [link(extraction code: fpfp)](https://pan.baidu.com/s/1nGPq5y2OfCumMQkY6ROKGA?)
 
 ## 📖 Dataset
 Before starting the evaluation, you need to prepare the corresponding jsonl files in advance. Different evaluation metrics require reading different types of jsonl files. These generally fall into three categories: image-prompt pairs, image-image pairs, and single images. Each line in the jsonl file should include the appropriate file paths. We provide example files in the `./examples` directory to help you construct your own.
