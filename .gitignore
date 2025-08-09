@@ -1,0 +1,5 @@
+checkpoints/
+./*.jsonl
+**/__pycache__/
+checkpoints
+.DS_Store
