@@ -54,4 +54,3 @@ Different evaluation metrics require reading different jsonl files, and we have 
 
 [FID Value reference link](https://github.com/mseitzer/pytorch-fid)
 
-[CLIP Score Reference Link](https://github.com/Taited/clip-score)
