@@ -9,7 +9,7 @@ T2I-Metrics: A Pipeline for Metrics in Text-to-Image
 
 ## 🎉 News
 <pre>
-• 🔥 The repository has been reorganized and now includes various AIGC metrics: FID, IS, CLIP, DINO, and DreamSim etc.
+• <strong>2025.08</strong>: 🔥 The repository has been reorganized and now includes various AIGC metrics: FID, IS, CLIP, DINO, and DreamSim etc.
 </pre>
 
     
