@@ -9,6 +9,7 @@ T2I-Metrics: A Pipeline for Metrics in Text-to-Image
 
 ## 🎉 News
 <pre>
+• <strong>2025.08</strong>: 🔥 The integration of video generation evaluation metrics related to VBench is expected to be added soon.
 • <strong>2025.08</strong>: 🔥 The repository has been reorganized and now includes various AIGC metrics: FID, IS, CLIP, DINO, and DreamSim etc.
 </pre>
 
